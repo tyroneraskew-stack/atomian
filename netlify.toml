@@ -1,8 +1,14 @@
 [build]
-  command = "echo 'Using pre-built dist/ folder'"
-  publish = "dist"
+  command = "echo 'Static site — no build step required'"
+  publish = "."
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

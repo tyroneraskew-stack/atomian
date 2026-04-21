@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2a24"/>
+      <stop offset="1" stop-color="#1c3b34"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="15%" r="60%">
+      <stop offset="0" stop-color="#c9a24b" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#c9a24b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="120" cy="315" r="72" fill="#0f2a24" stroke="#c9a24b" stroke-width="3"/>
+  <text x="120" y="346" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#e7cf95">A</text>
+  <text x="230" y="290" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#f6f1e6">Atomian Wellness</text>
+  <text x="230" y="340" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" letter-spacing="6" fill="#c9a24b">ATOMY · SOUTH AFRICA</text>
+  <text x="230" y="430" font-family="Georgia, serif" font-size="36" font-style="italic" fill="#f6f1e6">Absolute Quality. Absolute Price.</text>
+  <text x="230" y="480" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a8b8b1">Premium Korean skincare, health &amp; home</text>
+  <text x="230" y="540" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" fill="#8aa097">81 6th St, Parkhurst, Johannesburg · +27 76 712 8259</text>
+</svg>
