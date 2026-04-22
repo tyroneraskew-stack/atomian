@@ -1,11 +1,15 @@
 [build]
-  command = "echo 'Static site — no build step required'"
+  command = "echo 'Proxy configuration — no build step required'"
   publish = "dist"
 
+# Proxy every request on atomian.co.za to the upstream Skywork preview so
+# the live site mirrors that URL in real time. `force = true` ensures the
+# proxy takes precedence over the static fallback in `dist/`.
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "https://vpig86375e.skywork.website/:splat"
   status = 200
+  force = true
 
 [[headers]]
   for = "/*"
