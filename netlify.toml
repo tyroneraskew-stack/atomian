@@ -1,5 +1,5 @@
 [build]
-  command = "echo 'Static site — no build step required'"
+  command = "rm -rf dist && unzip -o 'atomian_deploy[1].zip' -d dist"
   publish = "dist"
 
 [[redirects]]
