@@ -1,10 +1,7 @@
 [build]
-  command = "echo 'Proxy configuration — no build step required'"
+  command = "mkdir -p dist && { [ -s dist/_redirects ] || printf '/*  https://vpig86375e.skywork.website/:splat  200!\\n' > dist/_redirects; } && { [ -s dist/index.html ] || printf '<!DOCTYPE html><meta http-equiv=\"refresh\" content=\"0;url=https://vpig86375e.skywork.website/\"><title>Atomian Wellness</title>' > dist/index.html; }"
   publish = "dist"
 
-# Proxy every request on atomian.co.za to the upstream Skywork preview so
-# the live site mirrors that URL in real time. `force = true` ensures the
-# proxy takes precedence over the static fallback in `dist/`.
 [[redirects]]
   from = "/*"
   to = "https://vpig86375e.skywork.website/:splat"
