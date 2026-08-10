@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atomianwellness.co.za/sitemap.xml
